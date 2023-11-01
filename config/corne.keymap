@@ -14,6 +14,10 @@
 #define L2 1
 #define Fn 2
 
+
+// Meh key
+#define MEH LC(LALT)
+
 // Behaviors Constants
 #define TAPPING_TERM_MS 280
 #define QUICK_TAP_MS 175
