@@ -8,6 +8,18 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
+// Layers
+#define L1 0
+#define L2 1
+#define Fn 2
+
+
+// Adds arrows and shift to smart layer for more comfortable navigation/selection moves
+&num_word {
+  layers = <L2>;
+  continue-list = <BSPC DEL DOT COMMA PLUS MINUS STAR FSLH EQUAL RSHFT LEFT RIGHT UP DOWN>;
+};
+
 / {
     keymap {
         compatible = "zmk,keymap";
