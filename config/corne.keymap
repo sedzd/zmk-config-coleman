@@ -378,6 +378,60 @@
             slow-release;
             layers = <0 1>;
         };
+
+        bt_clear {
+            bindings = <&bt BT_CLR>;
+            key-positions = <2 3 4>;
+            timeout-ms = <30>;
+            require-prior-idle-ms = <100>;
+            slow-release;
+            layers = <2>;
+        };
+
+        bt_sel_0 {
+            bindings = <&bt BT_SEL 0>;
+            key-positions = <1 13>;
+            timeout-ms = <30>;
+            require-prior-idle-ms = <100>;
+            slow-release;
+            layers = <2>;
+        };
+
+        bt_sel_1 {
+            bindings = <&bt BT_SEL 1>;
+            key-positions = <14 2>;
+            timeout-ms = <30>;
+            require-prior-idle-ms = <100>;
+            slow-release;
+            layers = <2>;
+        };
+
+        bt_sel_2 {
+            bindings = <&bt BT_SEL 2>;
+            key-positions = <3 15>;
+            timeout-ms = <30>;
+            require-prior-idle-ms = <100>;
+            slow-release;
+            layers = <2>;
+        };
+
+        bt_sel_3 {
+            bindings = <&bt BT_SEL 3>;
+            key-positions = <4 16>;
+            timeout-ms = <30>;
+            require-prior-idle-ms = <100>;
+            slow-release;
+            layers = <2>;
+        };
+
+        bt_sel_4 {
+            bindings = <&bt BT_SEL 4>;
+            key-positions = <5 17>;
+            timeout-ms = <30>;
+            require-prior-idle-ms = <100>;
+            slow-release;
+            layers = <2>;
+        };
     };
 
     keymap {
@@ -408,10 +462,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TAB     &kp N1        &kp N2        &kp N3        &kp N4        &kp N5          &kp N6    &kp N7    &kp N8    &kp N9     &kp N0  &kp BSPC
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT  &trans  &trans
-&kp LSHFT   &trans        &trans        &trans        &trans        &trans          &trans    &trans    &trans    &trans     &trans  &trans
-                                        &kp LGUI      &trans        &kp SPACE       &kp RET   &trans    &kp RALT
+&trans  &trans  &trans  &trans    &trans  &trans       &trans   &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp HOME         &trans
+&trans  &trans  &trans  &trans    &trans  &trans       &trans   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp END          &trans
+&trans  &trans  &trans  &trans    &trans  &trans       &trans   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_NUMBER_0  &trans
+                        &kp LGUI  &trans  &kp SPACE    &kp RET  &trans           &kp RALT
             >;
 
             label = "L2";
