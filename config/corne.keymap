@@ -584,10 +584,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&out OUT_TOG  &kp F1   &kp F2   &kp F3    &kp F4  &kp F5         &trans       &trans        &trans  &trans  &trans  &kp C_POWER
-&sys_reset    &kp F6   &kp F7   &kp F8    &kp F9  &kp F10        &trans       &trans        &trans  &trans  &trans  &sys_reset
-&cmo 2        &kp F11  &kp F12  &trans    &trans  &bootloader    &bootloader  &trans        &trans  &trans  &trans  &cmo 2
-                                &kp LGUI  &trans  &cmo 1         &cmo 1       &kp CAPSLOCK  &trans
+&out OUT_TOG  &kp F1   &kp F2   &kp F3  &kp F4  &kp F5         &trans       &trans        &trans  &trans  &trans  &kp C_POWER
+&sys_reset    &kp F6   &kp F7   &kp F8  &kp F9  &kp F10        &trans       &trans        &trans  &trans  &trans  &sys_reset
+&cmo 2        &kp F11  &kp F12  &trans  &trans  &bootloader    &bootloader  &trans        &trans  &trans  &trans  &cmo 2
+                                &trans  &trans  &cmo 1         &cmo 1       &kp CAPSLOCK  &trans
             >;
 
             label = "Fn";
