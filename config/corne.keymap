@@ -344,7 +344,6 @@
             #binding-cells = <0>;
             bindings = 
                 <&kp LGUI &kp K>,
-                <&kp NONE>,
                 <&kp Z>;
         };
     };
