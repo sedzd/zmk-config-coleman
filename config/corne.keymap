@@ -306,7 +306,7 @@
       key from a smart layer.
 
       Params:
-        1. Layer to switch to
+        1. Layer to switch tokzkzkzkzkzkzkzkzkzkz
 
       Example:
         `&cmo L1`
@@ -344,6 +344,7 @@
             #binding-cells = <0>;
             bindings = 
                 <&kp LGUI &kp K>,
+                <&kr LGUI &kr K>,
                 <&kp Z>;
         };
     };
