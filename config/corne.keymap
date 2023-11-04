@@ -226,6 +226,24 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
             #binding-cells = <0>;
         };
+
+       /*
+     - tap: command + K
+     - then: Z
+     */
+
+        /omit-if-no-ref/
+
+            zen: zen {
+            label = "ZM_zen";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&kp LGUI &kp K>
+                , <&kp NONE>
+                , <&kp Z>
+                ;
+        };
     };
 };
 
